@@ -5,31 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luck Birthday</title>
+    <title>is your birthday lucky ?</title>
     <link rel="stylesheet" href="/main.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <div>
-            <h1 class="heading">Is your birthday Lucky ?</h1>
+    <header class="heading">
+        <h1 class="heading">Is your birthday Lucky ?</h1>
+    </header>
 
-            <label for="input-date">Date of Birth: </label>
+    <section class="section1">
+
+        <div class="container">
+
+
+            <!-- <label for="input-date">Date of Birth: </label> -->
             <input type="date" id="input-date" />
 
-            <label for="lucky-number">Lucky Number: </label>
-            <input type="number" id="lucky-number">
+            <!-- <label for="lucky-number">Lucky Number: </label> -->
+            <input type="number" id="lucky-number" placeholder="Enter your lucky number">
 
-            <button id="check-btn">Check Number</button>
+            <button id="check-btn">Check</button>
 
             <div id="show-output"></div>
 
-
-            <p>Note: We do not save any data !</p>
-
+            <p><strong>Important Note -</strong> We do not save any data !</p>
         </div>
-    </div>
+
+
+    </section>
 
 
     <script src="/index.js"></script>

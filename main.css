@@ -1,7 +1,48 @@
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 90vh;
-    text-align: center;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+:root {
+  --white-color:#ffffff; 
+  --green-color:#008000;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-image: url('/images/birthday-ballons.jpg');
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+}
+
+#check-btn {
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px;
+  background-color: var(--green-color);
+  margin-top: 10px;
+}
+
+div.container > input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 17px;
+}
+
+.section1 .container p {
+  font-size: 18px;
+}
+
+#show-output {
+  padding:10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--white-color);
+}

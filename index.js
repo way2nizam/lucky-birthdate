@@ -17,7 +17,7 @@ function dobCharSum(dobArray) {
 }
 
 function showMessage(message) {
-  showOutput.innerHTML = message;
+  showOutput.innerHTML = 'Result - ' + message;
 }
 
 function clickHandler() {
