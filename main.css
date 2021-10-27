@@ -46,3 +46,23 @@ div.container > input {
   font-weight: bold;
   color: var(--white-color);
 }
+
+.footer-section ul{  
+  padding: 10px;
+  background-color: green;
+}
+
+.link {
+  text-decoration: none;
+  box-sizing: border-box;
+  color: white;
+}
+
+.list-non-bullet {
+  list-style: none;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 10px 10px;
+}
