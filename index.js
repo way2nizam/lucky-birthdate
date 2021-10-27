@@ -17,7 +17,7 @@ function dobCharSum(dobArray) {
 }
 
 function showMessage(message) {
-  showOutput.innerHTML = 'Result - ' + message;
+  showOutput.innerText = 'Result - ' + message;
 }
 
 function clickHandler() {
@@ -28,9 +28,18 @@ function clickHandler() {
 
   const dobSumValue = dobCharSum(trimmedDob);
 
-  if (dobSumValue % inputLuckyNumber === 0) {
+  if (!inputDob.value || luckyNumber.value < 0 || luckyNumber.value === '') {
+    showOutput.style.display = 'none';
+    alert('Input field can not be empty. Please fill correct DOB.');
+  } else if (dobSumValue % inputLuckyNumber === 0) {
+    showOutput.style.display = 'block';
+    document.querySelector('#show-output').style.backgroundColor = '#87CEEB';
+
     showMessage(inputLuckyNumber + ' is a lucky number.');
   } else {
+    showOutput.style.display = 'block';
+    document.querySelector('#show-output').style.backgroundColor = '#FF7F7F';
+
     showMessage(inputLuckyNumber + ' is not a lucky number.');
   }
 }
